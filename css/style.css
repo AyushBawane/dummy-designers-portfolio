@@ -1,0 +1,354 @@
+*{
+  margin: 0;
+  padding: 0;
+  transition: all 300ms;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .95rem; 
+  color: black;
+  user-select: none ;
+}
+.header{
+  width: 100%;
+  height: 70px; 
+  /* border: 1px solid green; */
+  box-shadow: 0 0 50px var(--p-shadow);  
+}
+.navbar{
+  display: flex;
+  height: inherit; 
+  align-items: center;
+  justify-content: space-between; 
+}
+.logo h2{
+  font-size: 2.3rem;
+  font-weight: bold;
+  color: var(--primary);
+}
+.logo , .navigation {
+  /* border: 2px solid blue; */
+}
+.navigation ul{
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+.navigation ul li a{
+  text-decoration: none;
+  transition: 200ms ; 
+  margin: 10px;
+}
+.navigation a:hover {
+  color: var(--primary) ;
+}
+.container{
+  /* border: 1px solid blue; */
+}
+.landing {
+  height: auto; 
+} 
+.landing-info{
+  display: flex;
+  padding-top: 30px;
+}
+.info , .photo{
+  width: 50%; 
+  /* padding: 20px 0; */
+  /* border: 1px solid green; */
+  line-height: 2.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.info h1{
+  color: var(--primary);
+  font-size: 2rem; 
+}
+.info h3{
+  color: var(--primary);
+}
+.info p{
+  font-size: .7rem; 
+}
+.name{
+  color: var(--secondary);
+}
+.primary-btn , .secondary-btn{
+  width: 120px;
+  padding: 8px;
+  margin-right: 5px; 
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 0.8rem;
+}
+.primary-btn {
+  background-color: var(--primary);
+  box-shadow: 8px 12px 20px var(--p-shadow);
+  transition: 300ms ;
+}
+.primary-btn:hover{
+  background-color: transparent; 
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+.secondary-btn{
+  background-color: var(--secondary);
+  box-shadow : 8px 12px 20px var(--s-shadow);
+  transition: 300ms ;
+}
+.secondary-btn:hover{
+  background-color: transparent;
+  color: var(--secondary);
+  border: 1px solid var(--secondary);
+}
+.photo{
+  display: flex;
+  align-items: flex-end;
+}
+.photo img{
+  width: 80%;
+  border: 10px solid white; 
+  border-radius: 50%;
+  box-shadow: 0 0 30px var(--p-shadow);
+  transition: 300ms;
+}
+.photo img:hover{
+  transform: scale(1.3); 
+  border: 0;
+  box-shadow: 0 0 50px var(--p-shadow);
+}
+.head-box{
+  text-align: center; 
+  
+}
+.head{
+  display: inline-block;
+  padding: 10px;
+  margin: 15px; 
+  width: auto;
+  border-bottom: 2px solid var(--primary);
+  color: var(--primary);
+}
+.head h1 {
+  color: var(--primary);
+  font-size: 1.8rem;
+}
+.head p {
+  color: var(--primary);
+}
+.about-box{
+  /* border: 2px solid green; */ 
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  box-shadow: 0 0 30px var(--p-shadow);
+  
+}
+.about-photo , .about-info{
+  width: 50%; 
+  /* border: 2px solid blue; */
+}
+.about-photo img{
+  width: 100%;
+  transition: 300ms; 
+}
+.about-photo img:hover{
+  transform: scale(1.2);
+  box-shadow: 0 0 20px var(--p-shadow); 
+}
+.about-info {
+  padding: 12px 20px ;  
+  /* line-height: 1.3rem; */
+}
+.about-info h1 {
+  padding: 15px 0;
+  font-size: 1.2rem;
+}
+.about-info h2{
+  color: var(--primary);
+  padding: 17px 0;
+}
+.about-info ul{
+  padding:0 20px ;
+  list-style-type: disc;
+}
+.about-info ul li::marker {
+  color: var(--secondary); 
+}
+.about-btns{
+  margin: 20px 0;
+}
+.service-box{
+  /* border: 1px solid green; */
+  display: flex; 
+  justify-content: space-between ;
+  flex-wrap: wrap; 
+}
+.s-boxes{
+  /* border: 1px solid blue; */ 
+  width: 200px;
+  height: 230px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  line-height: 1.3rem;
+  padding: 15px;
+  align-items: center;
+  justify-content: center;
+  background: url(../img/wave.svg);
+  background-size: cover;
+  transition: 300ms ;
+}
+.s-boxes::after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 230px;
+  z-index:-2;
+}
+.s-boxes:hover{
+  transform: scale(1.12);
+  box-shadow: 2px 3px 20px 5px var(--p-shadow);
+}
+.s-boxes i , .s-boxes h1 , .s-boxes p {
+  color: white;
+}
+.s-boxes i{
+  font-size:  2rem;
+  padding: 10px;
+  border-bottom: 2px solid white;
+}
+.s-boxes h1 {
+  padding: 10px ;
+  font-size: 1.2rem;
+}
+.s-boxes p {
+  font-size: 0.8rem;
+}
+
+.box-1{
+  background-color: var(--purple-p); 
+}
+.box-2{
+  background-color: var(--yellow); 
+}
+.box-3{
+  background-color: var(--pink); 
+}
+.box-4{
+  background-color: var(--orange); 
+}
+.box-5{
+  background-color: var(--blue); 
+}
+.box-6{
+  background-color: var(--green); 
+}
+.full {
+  width: 100%;
+  height: 600px; 
+  padding-top: 70px;  
+  /* border: 2px solid green; */
+  background: url(../img/svg-path.svg);
+  background-size: cover;
+  filter: drop-shadow(0 0 20px var(--p-shadow));
+}
+.portfolio{
+
+}
+.Portfolio-box{
+  /* border: 1px solid green; */
+  margin-top: 30px;
+  display: flex;
+}
+.Portfolio-list{
+  /* border: 1px solid blue; */
+  width: 35%;
+  height: 260px ;
+  line-height: 2rem;
+  box-shadow: 0 0 30px var(--p-shadow);
+}
+.Portfolio-list:before{ 
+  content: "";
+  height: inherit; 
+  width: 35px;
+  position: absolute ;
+  /* border: 5px solid red; */
+  z-index: -2; 
+  background-color: var(--primary);
+}
+.Portfolio-list ul{
+  list-style: none;
+  padding: 20px 0;
+}
+.Portfolio-list ul li button{
+  margin-bottom: 12px; 
+  margin-top: 12px; 
+  transition: all 300ms ;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+.Portfolio-list ul li i{
+  font-size: 1rem;
+  width: 45px; 
+  text-align: center;
+  margin-right: 5px;
+  color: white ;
+  background-color: var(--primary);
+  /* border: 1px solid red; */
+  border-radius: 20px;
+  padding: 8px 0  ;
+}
+.Portfolio-info{
+  /* border: 1px solid blue; */
+  width: 70%;
+  height: 260px ;
+}
+.active {
+  background-color: var(--primary); 
+  margin-right: 10px;
+  border-top-right-radius: 50px  ;
+  border-bottom-right-radius: 50px ; 
+  color: white; 
+}
+.p-info{
+  margin-left:30px;
+  height: inherit;
+  padding-left: 20px; 
+  border-left: 3px solid var(--primary);
+}
+.uni-year{
+  display: flex;
+  justify-content: space-between;
+  padding:1px 0;
+}
+.uni {
+  color: var(--secondary);
+}
+.year{
+  color: white;
+  background-color: var(--secondary);
+  border-radius: 50px;
+  font-size: 0.8rem;
+  padding: 3px 7px ;
+}
+.course {
+  padding:  5px 0; 
+  font-size: 0.8rem;
+}
+.p-para {
+  font-size: 0.8rem;
+}
+.edu-block { 
+  padding: 10px 0;
+}
+.Portfolio-info li{
+}
+.d-none{
+  display: none;
+}

@@ -1,0 +1,24 @@
+     /* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+     
+     /* colors */
+ :root {
+    --primary : rgba(13,191,175,1) ;
+    --p-shadow : rgba(13,191,175,0.3) ;
+    --secondary : rgba(244,127,22,1) ;
+    --s-shadow : rgba(244,127,22,0.3) ;
+    --purple-p : rgba(133,64,255,1) ;
+    --yellow : rgba(255,197,12,1) ;
+    --pink : rgba(236,64,122,1) ;
+    --orange : rgba(255,106,46,1) ;
+    --blue : rgba(20,182,255,1) ;
+    --green : rgba(74,175,71,1) ;
+ }
+
+    /* sizing */
+.content{
+  width: 70%;
+  margin: auto;
+  /* border: 1px solid red; */
+}    
