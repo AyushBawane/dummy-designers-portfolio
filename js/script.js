@@ -1,10 +1,10 @@
-console.log('ho kyu nahi raha hai re bhai????')
+// console.log('ho kyu nahi raha hai re bhai????')
 
     // history division
 
 let history = document.querySelector('.History');
 history.addEventListener('click' , ()=>{
-  console.log("clicked history"); 
+  // console.log("clicked history"); 
   let history = document.querySelector('.History').classList.add('active');
   let hislist = document.querySelector('.his-li').classList.add('active');
   let edu= document.querySelector('.Education').classList.remove('active');
@@ -27,7 +27,7 @@ history.addEventListener('click' , ()=>{
 
 let education = document.querySelector('.Education');
 education.addEventListener('click' , ()=>{
-  console.log("clicked education"); 
+  // console.log("clicked education"); 
   let history = document.querySelector('.History').classList.remove('active');
   let hislist = document.querySelector('.his-li').classList.remove('active');
   let edu= document.querySelector('.Education').classList.add('active');
@@ -49,7 +49,7 @@ education.addEventListener('click' , ()=>{
 
 let proskills = document.querySelector('.P-Skills');
 proskills.addEventListener('click' , ()=>{
-  console.log("clicked education"); 
+  // console.log("clicked programming"); 
   let history = document.querySelector('.History').classList.remove('active');
   let hislist = document.querySelector('.his-li').classList.remove('active');
   let edu= document.querySelector('.Education').classList.remove('active');
@@ -71,7 +71,7 @@ proskills.addEventListener('click' , ()=>{
         
 let devskills = document.querySelector('.D-Skills');
 devskills.addEventListener('click' , ()=>{
-  console.log("clicked education"); 
+  // console.log("clicked developement"); 
   let history = document.querySelector('.History').classList.remove('active');
   let hislist = document.querySelector('.his-li').classList.remove('active');
   let edu= document.querySelector('.Education').classList.remove('active');
@@ -93,7 +93,7 @@ devskills.addEventListener('click' , ()=>{
 
 let seoskills = document.querySelector('.SEO');
 seoskills.addEventListener('click' , ()=>{
-  console.log("clicked education"); 
+  // console.log("clicked SEO"); 
   let history = document.querySelector('.History').classList.remove('active');
   let hislist = document.querySelector('.his-li').classList.remove('active');
   let edu= document.querySelector('.Education').classList.remove('active');
@@ -109,4 +109,30 @@ seoskills.addEventListener('click' , ()=>{
   let pskills = document.querySelector('#p-skills').classList.add('d-none');
   let dskills = document.querySelector('#d-skills').classList.add('d-none');
   let seo = document.querySelector('#SEO').classList.remove('d-none');
+}); 
+
+ 
+let box1 = document.querySelector('#box1');
+box1.addEventListener('mouseover'  , ()=>{
+  // console.log("clicked SEO"); 
+  let first = document.querySelector('.first').classList.add('active2'); 
+  let second = document.querySelector('.second').classList.remove('active2');
+  let third = document.querySelector('.third').classList.remove('active2');
+}); 
+
+
+let box2 = document.querySelector('#box2');
+box2.addEventListener('mouseover'  , ()=>{
+  // console.log("clicked SEO"); 
+  let first = document.querySelector('.first').classList.remove('active2');
+  let second = document.querySelector('.second').classList.add('active2');
+  let third = document.querySelector('.third').classList.remove('active2');
+}); 
+
+let box3 = document.querySelector('#box3');
+box3.addEventListener('mouseover'  , ()=>{
+  // console.log("clicked SEO"); 
+  let first = document.querySelector('.first').classList.remove('active2');
+  let second = document.querySelector('.second').classList.remove('active2');
+  let third = document.querySelector('.third').classList.add('active2');
 }); 

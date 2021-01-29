@@ -30,7 +30,7 @@
 }
 .navigation ul{
   display: flex;
-  list-style: none;
+  list-style: none; 
   justify-content: space-between;
 }
 .navigation ul li a{
@@ -136,7 +136,7 @@
   font-size: 1.8rem;
 }
 .head p {
-  color: var(--primary);
+  color: black;
 }
 .about-box{
   /* border: 2px solid green; */ 
@@ -148,6 +148,7 @@
 }
 .about-photo , .about-info{
   width: 50%; 
+  overflow: hidden; 
   /* border: 2px solid blue; */
 }
 .about-photo img{
@@ -247,31 +248,31 @@
 .box-6{
   background-color: var(--green); 
 }
-.full {
+.path { 
   width: 100%;
-  height: 600px; 
+  height: 580px; 
   padding-top: 70px;  
   /* border: 2px solid green; */
   background: url(../img/svg-path.svg);
   background-size: cover;
   filter: drop-shadow(0 0 20px var(--p-shadow));
 }
-.portfolio{
+.Resume{
 
 }
-.Portfolio-box{
+.Resume-box{
   /* border: 1px solid green; */
   margin-top: 30px;
   display: flex;
 }
-.Portfolio-list{
+.Resume-list{
   /* border: 1px solid blue; */
   width: 35%;
   height: 260px ;
   line-height: 2rem;
   box-shadow: 0 0 30px var(--p-shadow);
 }
-.Portfolio-list:before{ 
+.Resume-list:before{ 
   content: "";
   height: inherit; 
   width: 35px;
@@ -280,11 +281,11 @@
   z-index: -2; 
   background-color: var(--primary);
 }
-.Portfolio-list ul{
+.Resume-list ul{
   list-style: none;
   padding: 20px 0;
 }
-.Portfolio-list ul li button{
+.Resume-list ul li button{
   margin-bottom: 12px; 
   margin-top: 12px; 
   transition: all 300ms ;
@@ -293,7 +294,7 @@
   outline: none;
   border: none;
 }
-.Portfolio-list ul li i{
+.Resume-list ul li i{
   font-size: 1rem;
   width: 45px; 
   text-align: center;
@@ -304,7 +305,7 @@
   border-radius: 20px;
   padding: 8px 0  ;
 }
-.Portfolio-info{
+.Resume-info{
   /* border: 1px solid blue; */
   width: 70%;
   height: 260px ;
@@ -347,8 +348,204 @@
 .edu-block { 
   padding: 10px 0;
 }
-.Portfolio-info li{
-}
 .d-none{
   display: none;
+}
+
+.plane{
+  width: 100%;
+  height: 580px; 
+  /* border: 2px solid green; */
+}
+.portfolio{
+  /* border: 1px solid red; */
+}
+.port-head{
+  /* border: 1px solid green; */
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+}
+.port-head h1 , .port-head a{
+  background-color: var(--primary);
+  border-radius: 50px; 
+  box-shadow: 0 0 20px 5px var(--p-shadow); 
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.port-content{
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0; 
+}
+.port-box{
+  /* border: 1px solid blue; */
+  width: 31%;
+  overflow: hidden; 
+  box-shadow: 0 0 20px  var(--p-shadow);
+}
+.port-box:hover{
+  transform: scale(1.2); 
+  box-shadow: 0 0 10px var(--primary);
+}
+.port-box img{
+  width: 100%;
+  position: relative;
+}
+
+.port-discs ul{
+list-style: none;
+display: flex;
+justify-content: center;
+align-items: center;
+padding : 10px;
+}
+.port-discs ul li { 
+font-size: 1.2rem;
+font-weight: bold;
+padding: 10px;
+}
+.active2{
+  color: var(--primary); 
+}
+.path-2 { 
+  width: 100%;
+  height: 650px; 
+  padding-top: 70px;  
+  /* border: 2px solid green; */
+  background: url(../img/svg-path-2.svg);
+  background-size: cover;
+  filter: drop-shadow(0 0 20px var(--p-shadow));
+}
+.price-content{
+  /* border: 1px solid green; */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;     
+}
+.price-box{
+  /* border: 1px solid blue; */
+  width: 32%;
+  margin-top: 20px;
+  box-shadow: 0 0 40px var(--p-shadow);
+}
+.price-head{
+  /* border: 1px solid black; */ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  line-height: 1.5rem ;
+}
+.price-head h1{
+  font-size: 1.6rem;
+  color: white;
+}
+.price-head h2{
+  font-size: 1rem;
+  color: white;
+}
+.price-head p{
+  font-size: .8rem; 
+  color: white;
+}
+.price-list{
+  width: 100%;
+  /* border: 1px solid  */;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.price-list ul{
+  list-style: none;
+}
+.price-list ul li{
+  margin: 10px 0;
+  font-size: 0.8rem;
+}
+.price-list ul li i{
+  /* border: 1px solid red; */
+  width: 25px;
+  text-align: center;
+}
+.price-btn{
+  /*border: 1px solid pink; */
+  text-align: center;
+  padding: 13px;
+  margin-bottom: 10px;
+}
+.price-btn h1 a {
+  text-decoration: none; 
+  font-size: 0.6rem;
+  color: white;
+  padding: 10px 20px ;
+  border-radius: 20px;
+}
+.price-1 .price-head , .price-1 .price-btn a{
+  background-color: var(--orange);
+}
+.price-2 .price-head , .price-2 .price-btn a{
+  background-color: var(--purple-p);
+}
+.price-3 .price-head , .price-3 .price-btn a{
+  background-color: var(--pink);
+}
+.contact{
+  width: 100%;
+  height: 450px;
+  padding-top: 70px;
+  margin-top: 30px;
+  /* border: 1px solid green; */
+  background: url(../img/wmap.jpg); 
+  background-size: cover;
+} 
+.contact-box{
+  width: 270px;
+  box-shadow: 0 0 30px 5px var(--p-shadow); 
+  border: 1px solid transparent;
+  background-color: white;
+}
+.contact-elements{
+ margin: 20px;
+}
+.contact-elements h1{ 
+  margin: 13px 0;
+  font-size: 1.3rem;
+  color: var(--primary);
+  font-weight: bold;
+}
+.contact-elements input , .contact-elements textarea { 
+  width: 100%;
+  margin: 5px 0;
+  padding: 10px;
+  border: none;
+  box-shadow: 0 0 10px var(--p-shadow); 
+  font-size: 0.6rem;
+}
+.contact-elements button{
+  margin: 10px 0;
+  width: 100%;
+}  
+.copy-box{
+  /* border: 2px solid pink; */
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+}
+.icons a{
+  text-decoration: none;
+}
+.icons i{
+  padding: 10px;
+  font-size: 2rem;
+}
+.icons i:hover{
+  color: var(--primary);
 }
