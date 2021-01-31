@@ -7,12 +7,18 @@
   font-size: .95rem; 
   color: black;
   user-select: none ;
+  scroll-behavior: smooth;
+  scroll-margin-top: 70px ;
 }
 .header{
   width: 100%;
   height: 70px; 
   /* border: 1px solid green; */
   box-shadow: 0 0 50px var(--p-shadow);  
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100;
 }
 .navbar{
   display: flex;
@@ -502,7 +508,7 @@ padding: 10px;
   padding-top: 70px;
   margin-top: 30px;
   /* border: 1px solid green; */
-  background: url(../img/wmap.jpg); 
+  background: url(../img/wmap.jpeg); 
   background-size: cover;
 } 
 .contact-box{
